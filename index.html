@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UP Maintenance</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>UP Maintenance</h1>
+    <form id="complaintForm" action="/submit_complaint" method="post" enctype="multipart/form-data">
+      <form action="/submit_complaint" method="post" enctype="multipart/form-data">
+        <label for="complaint_type">สถานที่จุดที่เสียหาย :</label>
+        <select id="complaint_type" name="complaint_type">
+          </option>
+          <option value="other">---- กรถณาเลือก -----
+          </option>
+            <option value="service_issue">คณะเทคโนโลยีสาระสนเทศและการสื่อสาร</option>
+            <option value="product_issue">คณะวิศวะกรรมศาสตร์</option>
+            <option value="other">คณะเกษตรศาสตร์และทรัพยากรธรรมชาติ</option>
+            <option value="other">คณะทันตแพทยศาสตร์
+            </option>
+            <option value="other">คณะนิติศาสตร์
+            </option>
+            <option value="other">คณะบริหารธุรกิจและนิเทศศาสตร์
+            </option>
+            <option value="other">คณะพยาบาลศาสตร์
+            </option>
+            <option value="other">คณะพลังงานและสิ่งแวดล้อม
+            </option>
+            <option value="other">คณะแพทยศาสตร์
+            </option>
+            <option value="other">คณะเภสัชศาสตร์
+            </option>
+            <option value="other">คณะรัฐศาสตร์และสังคมศาสตร์
+            </option>
+            <option value="other">คณะวิทยาศาสตร์
+            </option>
+            <option value="other">คณะวิทยาศาสตร์การแพทย์
+            </option>
+            <option value="other">คณะสถาปัตยกรรมศาสตร์และศิลปกรรมศาสตร์
+            </option>
+            <option value="other">คณะสหเวชศาสตร์
+            </option>
+            <option value="other">คณะสาธารณสุขศาสตร์
+            </option>
+            <option value="other">คณะศิลปศาสตร์
+        </select><br><br>
+
+        <label for="complaint_details">รายละเอียด :</label><br>
+        <textarea id="complaint_details" name="complaint_details" rows="4" cols="50"></textarea><br><br>
+
+        <label for="image_upload">กรุณาอัปโหลดรูปภาพ :</label><br>
+        <input type="file" id="image_upload" name="image_upload"><br><br>
+
+        <input type="submit" value="ส่งข้อมูล">
+      </form>
+    </form>
+</body>
+</html>
